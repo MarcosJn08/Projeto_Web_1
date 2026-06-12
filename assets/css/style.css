@@ -4,7 +4,6 @@ body {
   min-height: 100vh;
   margin: 0px;
   background-color: #0d0221;
-
 }
 header {
   background: linear-gradient(to bottom, #b180e0, #8e5fc0, #5a3595, #0d0221);
@@ -20,27 +19,62 @@ header button:hover {
 }
 
 header h1 {
-  color: white;
+  color: #fff;
 }
 
-#SearchBack{
-  background-color: white;
+#SearchBack {
+  background-color: #fff;
   border-radius: 40px;
 }
-#SearchBack button{
-  background-color: white;
-  color: black;
+#SearchBack button {
+  background-color: #fff;
+  color: #000000;
   border: none;
-  transition: all 80ms ease-in;
+  transition: all 0.3s ease-in;
 }
-#SearchBack button:hover{
-  background-color: gray;
-  color: black;
+#SearchBack button:hover {
+  background: rgb(184, 184, 184)000;
+  color: #000000;
   border: none;
 }
 
+.dropdown-menu {
+  border: none;
+  border-radius: 15px;
+  margin: 0px;
+  background-color: #2e1a47;
+}
 
-footer{
+.dropdown-menu a{
+  text-decoration: none;
+  border: none;
+}
+.dropdown-item{
+  color: #fff;
+  transition: 0.8s;
+}
+.dropdown-item:hover{
+  background-color: #8e5fc0;
+  color: #0d0221;
+}
+
+
+footer {
   padding: 10px;
-  background: linear-gradient( #5a3595, #8e5fc0, #b180e0, #b180e0);
+  background: linear-gradient(#5a3595, #8e5fc0, #b180e0, #b180e0);
+  color: #fff;
 }
+
+.dropdown-toggle {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
