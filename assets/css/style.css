@@ -1,80 +1,102 @@
+@font-face {
+  font-family: "FontGTA";
+  src: url("/assets/Fonts/New_Rocker/NewRocker-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: FontGTA, Arial, sans-serif;
+}
+
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  margin: 0px;
+  margin: 0;
   background-color: #0d0221;
 }
+
 header {
   background: linear-gradient(to bottom, #b180e0, #8e5fc0, #5a3595, #0d0221);
   padding: 15px 30px;
   padding-left: 0;
   padding-right: 0;
-  color: white;
+  color: #ffffff;
   border: none;
+}
+
+header h1 {
+  color: #ffffff;
 }
 
 header button:hover {
   border: none;
 }
 
-header h1 {
-  color: #fff;
+.barra-de-pesquisa{
+  background: white;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
-#SearchBack {
-  background-color: #fff;
-  border-radius: 40px;
-}
-#SearchBack button {
-  background-color: #fff;
+.barra-de-pesquisa button {
+  background-color: #ffffff;
   color: #000000;
   border: none;
   transition: all 0.3s ease-in;
 }
-#SearchBack button:hover {
-  background: rgb(184, 184, 184)000;
+
+.barra-de-pesquisa button:hover {
+  background: #ddd;
   color: #000000;
   border: none;
 }
 
 .dropdown-menu {
+  width: 500px;
   border: none;
   border-radius: 15px;
-  margin: 0px;
+  margin: 0;
+  padding: 8px;
   background-color: #2e1a47;
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
   text-decoration: none;
   border: none;
 }
-.dropdown-item{
-  color: #fff;
+
+.dropdown-item {
+  color: #ffffff;
   transition: 0.8s;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
   background-color: #8e5fc0;
   color: #0d0221;
 }
 
-
-footer {
-  padding: 10px;
-  background: linear-gradient(#5a3595, #8e5fc0, #b180e0, #b180e0);
-  color: #fff;
-}
-
 .dropdown-toggle {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .dropdown-toggle:focus,
 .dropdown-toggle:active {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
+.dropdown-section-title {
+  color: #cfcfcf;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 10px;
+  background: linear-gradient(to bottom, #5a3595, #8e5fc0, #b180e0, #b180e0);
+  color: #ffffff;
+}
