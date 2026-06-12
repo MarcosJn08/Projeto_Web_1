@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  background-color: #0d0221;
+}
+#base {
+  background: linear-gradient(to bottom, #b180e0, #8e5fc0, #5a3595, #0d0221);
+  padding: 15px 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#base button {
+  color: white;
+  border: none;
+}
+#base button:hover {
+  border: none;
+}
+
+#base h1 {
+  color: white;
+}
