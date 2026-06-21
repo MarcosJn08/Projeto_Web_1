@@ -100,3 +100,42 @@ footer {
   background: linear-gradient(to bottom, #5a3595, #8e5fc0);
   color: #ffffff;
 }
+.informacoes{
+  border: 2px solid rgb(231, 140, 231);
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  width: 500px;
+  padding: 10px;
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  font-size: 20px;
+}
+main{
+  padding: 20px;
+}
+.titulo{
+  font-size: 50px;
+  font-weight: bold;
+}
+.container-contato{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.formulario{
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border:2px solid rgb(231, 140, 231);
+  padding: 10px;
+}
+.lista:hover{
+  cursor: pointer;
+  color: blue;
+}

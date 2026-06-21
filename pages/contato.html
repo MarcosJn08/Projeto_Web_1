@@ -21,7 +21,7 @@
           <img src="../assets/images/Logo.png" alt="Logo" width="80" />
           <h1 class="m-0 fs-3">Elixir Store</h1>
         </button>
-
+        
         <!-- Menu -->
         <ul class="dropdown-menu custom-dropdown">
           <li class="dropdown-section-title">Usuário</li>
@@ -65,7 +65,48 @@
       </div>
     </div>
   </header>
-  <main></main>
+  <main class="text-light">
+    <div>
+      <h1 class="titulo">Central de Contato e Ajuda</h1><br>
+    </div><br>
+    <div class="container-contato">
+    <div class="informacoes">
+     <strong><p>Informações de Contato</p></strong>
+      <p class="bi bi-envelope"> elixirstore@gmail.com</p>
+      <p class="bi bi-whatsapp"> (33)99989-1234</p>
+      <p class="bi-geo-alt-fill"> Endereço - Plataforma 9 3/4</p>
+      </div>
+      <div class="formulario">
+    <h4>Não encontrou sua dúvida?</h4>
+    <form>
+        <div>
+        <label>Nome: <input type="text" name="name" required></label><br><br>
+        <label>Email: <input type="text" name="email" required></label><br><br>
+        <select class="form-select" name="devices" style="width: 210px;">
+          <option selected>Selecione uma opção</option>
+          <option value="conta">Conta</option>
+          <option value="jogos">Jogos</option>
+          <option value="pagamentos">Pagamentos</option>
+          <option value="comunidade">Comunidade</option>
+          <option value="Outro">Outro</option>
+        </select><br><br>
+        <p>Mensagem:</p>
+        <textarea name="comments" cols="50" rows="4">Tire a dúvida...</textarea><br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+        </div><br><br><hr>
+        <div>
+      <h5>Perguntas frequentes</h5><br>
+      <ul>
+        <li class="lista"><u>Problemas com a conta</u></li>
+        <li class="lista"><u>Compras e Pagamentos</u></li>
+        <li class="lista"><u>Jogos</u></li>
+      </ul>
+    </div>
+    </form>
+    </div>
+    </div>
+  </main>
   <footer class="row align-items-end justify-content-center">
     Elixir Store - Tela Contato
   </footer>
