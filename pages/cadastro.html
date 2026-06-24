@@ -12,13 +12,13 @@
 </head>
 
 <body>
-  <!-- Logo test-->
+  <!-- Logo -->
   <header class="container-fluid" id="base">
     <div class="row align-items-center justify-content-between">
       <div class="col-auto dropdown">
         <button class="btn d-flex align-items-center justify-content-start dropdown-toggle text-light fs-1"
           type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-expanded="false">
-          <img src="../assets/images/Logo.png" alt="Logo" width="80" />
+          <img src="../assets/images/Logo.png" alt="Logo" title="Logo Elixir Store" width="80" />
           <h1 class="m-0 fs-3">Elixir Store</h1>
         </button>
 
@@ -50,25 +50,283 @@
       </div>
       <div class="col search-wrapper">
         <div class="input-group barra-de-pesquisa">
-          <input type="text" class="form-control" placeholder="Procurar" id="BarraDeBuscar" />
+          <input type="text" class="form-control" placeholder="Procurar" id="BarraDeBuscar" title="Busque jogos" aria-label="Buscar jogos" />
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button">
+            <button class="btn btn-outline-secondary" type="button" title="Buscar">
               <i class="bi bi-search fs-5"></i>
             </button>
           </div>
         </div>
       </div>
-      <div class="col-auto">
-        <a href=""><i class="bi bi-cart fs-1 text-light"></i></a>
-        <a href=""><i class="bi bi-bell-fill fs-1 text-light"></i></a>
-        <a href=""><i class="bi bi-person-circle fs-1 text-light"></i></a>
+      <div class="col-auto d-flex align-items-center gap-3">
+        <!-- Carrinho -->
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle toggle-dropdown-carrinho text-light fs-1" data-bs-toggle="dropdown" aria-expanded="false" id="cartDropdown" data-bs-auto-close="outside" title="Carrinho de compras">
+            <i class="bi bi-cart"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end menu-dropdown-carrinho text-light" aria-labelledby="cartDropdown">
+            <h5 class="mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-cart3 icone-roxo-destaque"></i> Seu Carrinho
+            </h5>
+            <hr>
+            <div class="cart-dropdown-items-list mb-3">
+              <!-- Item 1 -->
+              <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-secondary">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../assets/images/rdr2.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2" class="imagem-item-dropdown" />
+                  <div>
+                    <h6 class="titulo-item-dropdown text-white mb-0">Red Dead Redemption 2</h6>
+                    <span class="preco-item-dropdown">R$ 249,90</span>
+                  </div>
+                </div>
+                <button class="btn btn-link text-danger p-0 botao-remover-item" title="Remover Red Dead Redemption 2 do carrinho"><i class="bi bi-trash fs-6"></i></button>
+              </div>
+              <!-- Item 2 -->
+              <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-secondary">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../assets/images/csgo2.png" alt="CS:GO 2" title="CS:GO 2" class="imagem-item-dropdown" />
+                  <div>
+                    <h6 class="titulo-item-dropdown text-white mb-0">CS:GO 2</h6>
+                    <span class="preco-item-dropdown">Grátis</span>
+                  </div>
+                </div>
+                <button class="btn btn-link text-danger p-0 botao-remover-item" title="Remover CS:GO 2 do carrinho"><i class="bi bi-trash fs-6"></i></button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="fw-semibold">Total:</span>
+              <span class="fw-bold text-white">R$ 249,90</span>
+            </div>
+            <div class="d-grid">
+              <a href="cadastro.html" class="btn btn-primary btn-finalizar-compra text-light" title="Finalizar compra">Finalizar Compra</a>
+            </div>
+          </div>
+        </div>
+        <!-- Notificações -->
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle toggle-dropdown-carrinho text-light fs-1" data-bs-toggle="dropdown" aria-expanded="false" id="notificationDropdown" title="Notificações">
+            <i class="bi bi-bell-fill"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end menu-dropdown-notificacoes text-light p-3" aria-labelledby="notificationDropdown">
+            <h6 class="mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-bell icone-roxo-destaque"></i> Notificações
+            </h6>
+            <hr class="my-2">
+            <div class="text-center py-3 text-white-50">
+              <i class="bi bi-bell-slash fs-3 d-block mb-2 text-muted"></i>
+              <span class="texto-notificacao-vazia">Não há mensagens no momento</span>
+            </div>
+          </div>
+        </div>
+        <!-- Conta -->
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle toggle-dropdown-carrinho text-light fs-1" data-bs-toggle="dropdown" aria-expanded="false" id="accountDropdown" title="Conta de usuário">
+            <i class="bi bi-person-circle"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end menu-dropdown-conta text-light" aria-labelledby="accountDropdown">
+            <li>
+              <a href="#" class="dropdown-item py-2 d-flex align-items-center gap-2" title="Configurações">
+                <i class="bi bi-gear"></i> Configurações
+              </a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item py-2 d-flex align-items-center gap-2" title="Sair da conta">
+                <i class="bi bi-box-arrow-right"></i> Sair
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
-  <main></main>
-  <footer class="row align-items-end justify-content-center">
-    Elixir Store - Tela de cadastro
-  </footer>
-</body>
+  <main class="container text-light my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-9">
+        
+        <!-- Finalização de compra -->
+        <div class="carrinho-card mb-4">
+          <!-- Item 1 -->
+          <div class="carrinho-item">
+            <div class="carrinho-item-info">
+              <img src="../assets/images/rdr2.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2" class="carrinho-item-img" />
+              <div class="carrinho-item-details">
+                <h4>Red Dead Redemption 2</h4>
+                <p>R$ 249,90</p>
+              </div>
+            </div>
+            <div class="carrinho-item-delete" title="Remover Red Dead Redemption 2">
+              <i class="bi bi-trash"></i>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="carrinho-item">
+            <div class="carrinho-item-info">
+              <img src="../assets/images/csgo2.png" alt="CS:GO 2" title="CS:GO 2" class="carrinho-item-img" />
+              <div class="carrinho-item-details">
+                <h4>CS:GO 2</h4>
+                <p>Gratis</p>
+              </div>
+            </div>
+            <div class="carrinho-item-delete" title="Remover CS:GO 2">
+              <i class="bi bi-trash"></i>
+            </div>
+          </div>
+          
+          
+          <div class="p-4">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 mb-3 mb-md-0">
+                <div class="carrinho-pill-container">
+                  <div class="carrinho-pill">
+                    <div class="carrinho-pill-left">
+                      <div class="carrinho-pill-icon-ticket d-flex align-items-center justify-content-center">
+                        <i class="bi bi-ticket-perforated"></i>
+                      </div>
+                      <span class="carrinho-pill-text">Cupom de desconto</span>
+                    </div>
+                    <a href="#" class="carrinho-pill-action">
+                      Selecionar <span style="color: #c084fc; font-weight: bold; font-size: 1.1rem; vertical-align: middle; margin-left: 2px;">&gt;</span>
+                    </a>
+                  </div>
+                  <div class="carrinho-pill">
+                    <div class="carrinho-pill-left">
+                      <div class="carrinho-pill-icon">
+                        <i class="bi bi-currency-dollar" style="font-weight: bold; -webkit-text-stroke: 1px;"></i>
+                      </div>
+                      <span class="carrinho-pill-text">Elixir-coins</span>
+                    </div>
+                    <a href="#" class="carrinho-pill-action">
+                      Selecionar <span style="color: #c084fc; font-weight: bold; font-size: 1.1rem; vertical-align: middle; margin-left: 2px;">&gt;</span>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-5 col-12 d-flex justify-content-end align-items-center mt-3 mt-md-0">
+                <div class="resumo-valores text-end" style="min-width: 190px;">
+                  <div class="resumo-linha justify-content-between">
+                    <span>Subtotal:</span>
+                    <span>R$ 249,90</span>
+                  </div>
+                  <div class="resumo-linha justify-content-between">
+                    <span>Imposto:</span>
+                    <span>R$ 0,00</span>
+                  </div>
+                  <div class="resumo-linha justify-content-between">
+                    <span>Desconto:</span>
+                    <span>R$ 0,00</span>
+                  </div>
+                  <div class="resumo-linha resumo-total-linha justify-content-between">
+                    <span>Total:</span>
+                    <span>R$ 249,90</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+        
+        <!-- Opções de Pagamento -->
+        <div class="carrinho-pagamento-card mt-4">
+          <h4 class="mb-4 d-flex align-items-center gap-2">
+            <i class="bi bi-credit-card-2-back text-purple" style="color: #c084fc;"></i> Opções de Pagamento
+          </h4>
+          
+          <input type="radio" name="metodo_pagamento" id="opcao-pagamento-pix" class="d-none" />
+          <input type="radio" name="metodo_pagamento" id="opcao-pagamento-cartao" class="d-none" />
 
-</html>
+          <!-- Pix -->
+          <label for="opcao-pagamento-pix" class="w-100 d-block mb-2">
+            <div class="metodo-pagamento" id="btn-pix" title="Selecionar pagamento via Pix">
+              <div class="metodo-pagamento-left">
+                <i class="bi bi-qr-code-scan metodo-pagamento-icon"></i>
+                <div>
+                  <span class="fw-semibold d-block text-white">Pix</span>
+                  <small class="text-white-50">Aprovação imediata · 5% de desconto</small>
+                </div>
+              </div>
+              <i class="bi bi-circle text-muted icone-desmarcado"></i>
+              <i class="bi bi-check-circle-fill text-success icone-marcado"></i>
+            </div>
+          </label>
+          
+          <!-- Cartão de Crédito -->
+          <label for="opcao-pagamento-cartao" class="w-100 d-block mb-2">
+            <div class="metodo-pagamento" id="btn-cartao" title="Selecionar pagamento via Cartão de Crédito">
+              <div class="metodo-pagamento-left">
+                <i class="bi bi-credit-card-2-front-fill metodo-pagamento-icon"></i>
+                <div>
+                  <span class="fw-semibold d-block text-white">Cartão de Crédito</span>
+                  <small class="text-white-50">Em até 12x sem juros no cartão</small>
+                </div>
+              </div>
+              <i class="bi bi-circle text-muted icone-desmarcado"></i>
+              <i class="bi bi-check-circle-fill text-success icone-marcado"></i>
+            </div>
+          </label>
+          
+          <!-- Card de Pagamento -->
+          <div class="mt-4 p-3 rounded" id="container-paineis" style="background-color: #270340;">
+            <!-- Pix -->
+            <div id="painel-pix" class="painel-pagamento text-center py-3">
+              <i class="bi bi-qr-code fs-1 d-block mb-3 text-white"></i>
+              <p class="mb-2 text-white" style="font-size: 0.95rem;">Escaneie o código QR no app do seu banco para pagar.</p>
+              <div class="input-group mb-3 barra-de-pesquisa mx-auto" style="max-width: 320px;">
+                <input type="text" class="form-control text-truncate border-0" value="00020126360014br.gov.bcb.pix0114elixirstorepix" readonly id="chavePix" title="Código Pix para cópia" />
+              </div>
+              <span class="badge bg-warning text-dark"><i class="bi bi-clock me-1"></i>Expira em 10:00 minutos</span>
+            </div>
+            
+            <!-- Cartão -->
+            <div id="painel-cartao" class="painel-pagamento">
+              <form class="row g-3">
+                <div class="col-12">
+                  <label for="numeroCartao" class="form-label text-white" style="font-size: 0.85rem;">Número do Cartão</label>
+                  <input type="text" id="numeroCartao" class="form-control input-checkout" placeholder="0000 0000 0000 0000" title="Digite o número do seu cartão de crédito" />
+                </div>
+                <div class="col-12">
+                  <label for="nomeCartao" class="form-label text-white" style="font-size: 0.85rem;">Nome Impresso no Cartão</label>
+                  <input type="text" id="nomeCartao" class="form-control input-checkout" placeholder="NOME DO TITULAR" title="Digite o nome impresso no seu cartão" />
+                </div>
+                <div class="col-6">
+                  <label for="validadeCartao" class="form-label text-white" style="font-size: 0.85rem;">Validade</label>
+                  <input type="text" id="validadeCartao" class="form-control input-checkout" placeholder="MM/AA" title="Digite a validade do cartão (MM/AA)" />
+                </div>
+                <div class="col-6">
+                  <label for="cvvCartao" class="form-label text-white" style="font-size: 0.85rem;">CVV</label>
+                  <input type="password" id="cvvCartao" class="form-control input-checkout" placeholder="123" title="Digite o código CVV de 3 dígitos do cartão" />
+                </div>
+                <div class="col-12">
+                  <label for="parcelamentoCartao" class="form-label text-white" style="font-size: 0.85rem;">Opções de Parcelamento</label>
+                  <select id="parcelamentoCartao" class="form-select input-checkout" title="Selecione em quantas parcelas deseja pagar">
+                    <option selected>1x de R$ 249,90 sem juros</option>
+                    <option>2x de R$ 124,95 sem juros</option>
+                    <option>3x de R$ 83,30 sem juros</option>
+                    <option>6x de R$ 41,65 sem juros</option>
+                    <option>12x de R$ 20,82 sem juros</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="d-grid mt-4">
+            <a href="../index.html" class="btn btn-primary py-3 btn-finalizar-compra d-flex align-items-center justify-content-center" style="font-size: 1.1rem; border-radius: 12px; text-decoration: none;" title="Finalizar compra">
+              <i class="bi bi-shield-lock me-2"></i>Finalizar Compra
+            </a>
+          </div>
+          <div class="text-center mt-3 text-white-50" style="font-size: 0.85rem;">
+            <i class="bi bi-shield-check text-success me-1"></i>Pagamento 100% seguro
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </main>
+  
+  <footer class="row align-items-end justify-content-center">
+    Elixir Store - Tela de finalização de compra
+  </footer>
+  
