@@ -101,18 +101,6 @@ footer {
   background: linear-gradient(to bottom, #5a3595, #8e5fc0);
   color: #ffffff;
 }
-.informacoes{
-  border: 2px solid rgb(231, 140, 231);
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-  width: 500px;
-  padding: 10px;
-  flex: 1;
-  min-width: 300px;
-  height: 300px;
-  font-size: 20px;
-}
 main{
   padding: 20px;
 }
@@ -139,6 +127,155 @@ main{
 .lista:hover{
   cursor: pointer;
   color: blue;
+}
+.informacoes{
+  flex:1;
+  color: white;
+  width: 180px;
+  padding: 10px;
+  min-width: 180px;
+  height: 300px;
+  font-size: 20px;
+}
+main{
+  padding: 20px;
+}
+.titulo{
+  font-size: 50px;
+  font-weight: bold;
+}
+.container-contato{
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.formulario{
+  flex: 2;
+  min-width: 100px;
+  background-color: #1a0c30;
+  color: white;
+  border-radius: 10px;
+  border:2px solid rgba(136, 3, 136, 0.5);
+  padding: 20px;
+}
+.lista:hover{
+  cursor: pointer;
+  color: blue;
+}
+.icone-envelope{
+  color: #8e5fc0;
+  font-size: 25px;
+  padding: 5px;
+}
+.icone-whatsapp{
+  color: #8e5fc0;
+  font-size: 25px;
+  padding: 5px;
+}
+.icone-geo{
+  color: #8e5fc0;
+  font-size: 25px;
+  padding: 5px;
+}
+textarea{
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #5a3db8;
+  background-color: #1a0c30;
+  color: white;
+}
+textarea:focus{
+  border-color: #9c6cff;
+  box-shadow: 0 0 8px rgba(156,108,255,.5);
+}
+select{
+  color: white;
+}
+select:invalid{
+  color: gray;
+}
+.linha-form{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo label{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.campo input{
+    background-color: #1a0c30;
+    color: white;
+    border: 1px solid #5a3db8;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+}
+
+.campo input:focus{
+    border-color: #9c6cff;
+    box-shadow: 0 0 8px rgba(156,108,255,.5);
+}
+.form-select{
+  background-color: #1a0c30;
+  color: white;
+  border: 1px solid #5a3db8;
+}
+.form-select:focus{
+  border-color: #9c6cff;
+  box-shadow: 0 0 8px rgba(156,108,255,.5);
+}
+.form-select:hover{
+  cursor: pointer;
+}
+.btn.btn-primary{
+  background-color: rgba(143, 62, 197, 0.575);
+  border-radius: 10px;
+  border: 1px solid #5a3db8;
+}
+.btn.btn-secondary{
+  border-radius: 10px;
+  background-color:#a87ffc
+}
+.btn.btn-primary:hover{
+  box-shadow: 0 0 8px rgba(156,108,255,.5);
+}
+.btn.btn-secondary:hover{
+  box-shadow: 0 0 8px rgba(156,108,255,.5);
+}
+.botoes{
+  display: flex;
+  justify-content: space-between;
+}
+.perguntas{
+  position: relative;
+  background-color: #1a0c30;
+  border-radius: 10px;
+  border:2px solid rgba(136, 3, 136, 0.5);
+  padding: 20px;
+  text-align: left;
+}
+.perguntas-opcoes{
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+.bi.bi-house-door-fill{
+  color:#8e5fc0;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 .carrinho-card {
