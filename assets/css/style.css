@@ -141,8 +141,11 @@ main{
   padding: 20px;
 }
 .titulo{
+  display: inline-block;
   font-size: 50px;
   font-weight: bold;
+  border-bottom: 4px solid #8e5fc0;
+
 }
 .container-contato{
   display: flex;
@@ -200,13 +203,13 @@ select:invalid{
 .linha-form{
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 .campo{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex: 1;
+    min-width: 0;
 }
 
 .campo label{
@@ -221,6 +224,8 @@ select:invalid{
     border-radius: 10px;
     padding: 12px;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .campo input:focus{
@@ -270,6 +275,12 @@ select:invalid{
   position: absolute;
   right: 20px;
   top: 40px;
+}
+@media (max-width: 768px) {
+  .perguntas-opcoes {
+    position: static;
+    margin-top: 10px;
+  }
 }
 .bi.bi-house-door-fill{
   color:#8e5fc0;
