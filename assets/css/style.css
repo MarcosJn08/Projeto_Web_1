@@ -638,3 +638,9 @@ select:invalid{
 .text-yellow{
   color: yellow;
 }
+
+.categoria{
+  background-color: #5a3db8;
+  border: 2px solid white;
+  border-radius: 8px;
+}
