@@ -640,7 +640,18 @@ select:invalid{
 }
 
 .categoria{
-  background-color: #5a3db8;
-  border: 2px solid white;
-  border-radius: 8px;
+    background: rgba(128, 0, 255, 0.15);
+    border: 1px solid #8b5cf6;
+    color: #d8c4ff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
+
+.btn-buy:hover #buy {
+    color: black;
+}
+
+
+
