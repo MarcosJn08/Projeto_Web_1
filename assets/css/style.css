@@ -649,9 +649,26 @@ select:invalid{
     font-weight: 500;
 }
 
-.btn-buy:hover #buy {
-    color: black;
+.info-card{
+    background-color: #171126;
+    border: 1px solid #5e2eff;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
 }
 
+.info-card i{
+    color: #8b5cf6;
+}
+
+.titulo{
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.valor{
+    color: white;
+    font-weight: 600;
+}
 
 
