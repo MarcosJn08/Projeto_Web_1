@@ -134,7 +134,7 @@ main{
 }
 
 .container-contato{
-  display: flex;
+  display: flex; 
   gap: 15px;
   align-items: flex-start;
   margin-top: 20px;
