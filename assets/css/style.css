@@ -137,7 +137,7 @@ main{
   display: flex; 
   gap: 15px;
   align-items: flex-start;
-  margin-top: 20px; 
+  margin-top: 20px;  
 }
 .formulario{
   flex: 2;
