@@ -115,15 +115,7 @@ main{
   align-items: flex-start;
   margin-top: 20px;
 }
-.formulario{
-  flex: 1;
-  min-width: 300px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  border:2px solid rgb(231, 140, 231);
-  padding: 10px;
-}
+
 .lista:hover{
   cursor: pointer;
   color: blue;
@@ -140,23 +132,17 @@ main{
 main{
   padding: 20px;
 }
-.titulo{
-  display: inline-block;
-  font-size: 50px;
-  font-weight: bold;
-  border-bottom: 4px solid #8e5fc0;
 
-}
 .container-contato{
-  display: flex;
+  display: flex; 
   gap: 15px;
   align-items: flex-start;
-  margin-top: 20px;
+  margin-top: 20px;  
 }
 .formulario{
   flex: 2;
   min-width: 100px;
-  background-color: #1a0c30;
+  background-color: #130a20;
   color: white;
   border-radius: 10px;
   border:2px solid rgba(136, 3, 136, 0.5);
@@ -236,6 +222,7 @@ select:invalid{
   background-color: #1a0c30;
   color: white;
   border: 1px solid #5a3db8;
+  border-radius: 10px;
 }
 .form-select:focus{
   border-color: #9c6cff;
@@ -262,10 +249,12 @@ select:invalid{
 .botoes{
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 35px;
 }
 .perguntas{
   position: relative;
-  background-color: #1a0c30;
+  background-color: #130a20;
   border-radius: 10px;
   border:2px solid rgba(136, 3, 136, 0.5);
   padding: 20px;
@@ -283,10 +272,12 @@ select:invalid{
   }
 }
 .bi.bi-house-door-fill{
-  color:#8e5fc0;
+  color:#cc9cff;
   font-size: 18px;
   padding: 10px;
   margin-left: 20px;
+  position: relative;
+  top: 5px;
 }
 
 .carrinho-card {
