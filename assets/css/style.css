@@ -5,7 +5,7 @@
 
 * {
   font-family: Poppins, Arial, sans-serif;
-  
+  color: white;
 }
 
 body {
@@ -625,3 +625,41 @@ select:invalid{
   background-color: rgba(142, 95, 192, 0.35) !important;
   color: #ffffff !important;
 }
+
+.text-yellow{
+  color: yellow;
+}
+
+.categoria{
+    background: rgba(128, 0, 255, 0.15);
+    border: 1px solid #8b5cf6;
+    color: #d8c4ff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.info-card{
+    background-color: #171126;
+    border: 1px solid #5e2eff;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+}
+
+.info-card i{
+    color: #8b5cf6;
+}
+
+.titulo{
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.valor{
+    color: white;
+    font-weight: 600;
+}
+
+
