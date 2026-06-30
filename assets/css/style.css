@@ -101,6 +101,7 @@ footer {
   background: linear-gradient(to bottom, #5a3595, #8e5fc0);
   color: #ffffff;
 }
+/* Contato início*/
 main{
   padding: 20px;
 }
@@ -265,6 +266,9 @@ select:invalid{
   right: 20px;
   top: 40px;
 }
+/*Contato fim*/
+
+
 @media (max-width: 768px) {
   .perguntas-opcoes {
     position: static;
