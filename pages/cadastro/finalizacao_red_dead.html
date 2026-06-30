@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elixir Store</title>
   <link rel="icon" href="../../assets/images/Logo.png">
-  <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="../assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../assets/bootstrap-icons/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../../assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../assets/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 
 <body>
@@ -18,8 +18,8 @@
     <div class="row align-items-center justify-content-between">
       <div class="col-auto dropdown">
         <button class="btn d-flex align-items-center justify-content-start dropdown-toggle text-light fs-1"
-          type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-expanded="false">
-          <img src="../assets/images/Logo.png" alt="Logo" title="Logo Elixir Store" width="80" />
+          type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="../../assets/images/Logo.png" alt="Logo" title="Logo Elixir Store" width="80" />
           <h1 class="m-0 fs-3">Elixir Store</h1>
         </button>
 
@@ -27,13 +27,13 @@
         <ul class="dropdown-menu custom-dropdown">
           <li class="dropdown-section-title">Usuário</li>
           <li>
-            <a href="../index.html" class="dropdown-item text-light"><i class="bi bi-house-fill fs-4"></i>Inicio</a>
+            <a href="../../index.html" class="dropdown-item text-light"><i class="bi bi-house-fill fs-4"></i>Inicio</a>
           </li>
           <li>
-            <a href="catalogo.html" class="dropdown-item text-light"><i class="bi bi-bookmarks fs-4"></i>Catalogo</a>
+            <a href="../catalogo.html" class="dropdown-item text-light"><i class="bi bi-bookmarks fs-4"></i>Catalogo</a>
           </li>
           <li>
-            <a href="contato.html" class="dropdown-item text-light"><i class="bi bi-telephone-fill fs-4"></i>Contato</a>
+            <a href="../contato.html" class="dropdown-item text-light"><i class="bi bi-telephone-fill fs-4"></i>Contato</a>
           </li>
 
         </ul>
@@ -65,7 +65,7 @@
               <!-- Item 1 -->
               <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-secondary">
                 <div class="d-flex align-items-center gap-2">
-                  <img src="../assets/images/rdr2.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2"
+                  <img src="../../assets/images/rdr2.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2"
                     class="imagem-item-dropdown" />
                   <div>
                     <h6 class="titulo-item-dropdown text-white mb-0">Red Dead Redemption 2</h6>
@@ -78,7 +78,7 @@
               <!-- Item 2 -->
               <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-secondary">
                 <div class="d-flex align-items-center gap-2">
-                  <img src="../assets/images/csgo2.png" alt="CS:GO 2" title="CS:GO 2" class="imagem-item-dropdown" />
+                  <img src="../../assets/images/csgo2.png" alt="CS:GO 2" title="CS:GO 2" class="imagem-item-dropdown" />
                   <div>
                     <h6 class="titulo-item-dropdown text-white mb-0">CS:GO 2</h6>
                     <span class="preco-item-dropdown">Grátis</span>
@@ -93,7 +93,7 @@
               <span class="fw-bold text-white">R$ 249,90</span>
             </div>
             <div class="d-grid">
-              <a href="cadastro.html" class="btn btn-primary btn-finalizar-compra text-light"
+              <a href="finalizacao_red_dead.html" class="btn btn-primary btn-finalizar-compra text-light"
                 title="Finalizar compra">Finalizar Compra</a>
             </div>
           </div>
@@ -142,12 +142,26 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10 col-xl-9">
 
+        <!-- Confirmação de Conta Logada -->
+        <div class="carrinho-pagamento-card mb-4 p-3 d-flex align-items-center" style="border-left: 4px solid #8e5fc0;">
+          <div class="d-flex align-items-center gap-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; background-color: rgba(142, 95, 192, 0.2);">
+              <i class="bi bi-person-check-fill" style="color: #c084fc; font-size: 1.4rem;"></i>
+            </div>
+            <div>
+              <span class="text-white-50 d-block" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.2;">Comprando como:</span>
+              <span class="fw-semibold text-white d-block" style="font-size: 1.05rem; line-height: 1.2;">Marcos Silva</span>
+              <small class="text-white-50" style="font-size: 0.85rem;">marcos.silva@email.com</small>
+            </div>
+          </div>
+        </div>
+
         <!-- Finalização de compra -->
         <div class="carrinho-card mb-4">
           <!-- Item 1 -->
           <div class="carrinho-item">
             <div class="carrinho-item-info">
-              <img src="../assets/images/rdr2.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2"
+              <img src="../../assets/images/rdr2.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2"
                 class="carrinho-item-img" />
               <div class="carrinho-item-details">
                 <h4>Red Dead Redemption 2</h4>
@@ -162,7 +176,7 @@
           <!-- Item 2 -->
           <div class="carrinho-item">
             <div class="carrinho-item-info">
-              <img src="../assets/images/csgo2.png" alt="CS:GO 2" title="CS:GO 2" class="carrinho-item-img" />
+              <img src="../../assets/images/csgo2.png" alt="CS:GO 2" title="CS:GO 2" class="carrinho-item-img" />
               <div class="carrinho-item-details">
                 <h4>CS:GO 2</h4>
                 <p>Gratis</p>
@@ -270,6 +284,14 @@
 
           <!-- Card de Pagamento -->
           <div class="mt-4 p-3 rounded" id="container-paineis" style="background-color: #270340;">
+            <!-- Alerta Selecionar Pagamento -->
+            <div id="painel-alerta" class="text-center py-3">
+              <i class="bi bi-exclamation-circle-fill text-warning fs-3 d-block mb-2"></i>
+              <p class="mb-0 text-white" style="font-size: 0.95rem; font-weight: 500;">
+                Selecione uma opção de pagamento acima para continuar.
+              </p>
+            </div>
+
             <!-- Pix -->
             <div id="painel-pix" class="painel-pagamento text-center py-3">
               <i class="bi bi-qr-code fs-1 d-block mb-3 text-white"></i>
@@ -278,7 +300,10 @@
               <div class="input-group mb-3 barra-de-pesquisa mx-auto" style="max-width: 320px;">
                 <input type="text" class="form-control text-truncate border-0"
                   value="00020126360014br.gov.bcb.pix0114elixirstorepix" readonly id="chavePix"
-                  title="Código Pix para cópia" />
+                  title="Código Pix para cópia" style="background: white; color: #333;" />
+                <button class="btn btn-light d-flex align-items-center justify-content-center" type="button" id="btnCopiarPix" title="Copiar código Pix" onclick="navigator.clipboard.writeText(document.getElementById('chavePix').value); alert('Código Pix copiado com sucesso!');" style="background: white; border: none; padding: 0 15px;">
+                  <i class="bi bi-copy" style="color: #8e5fc0 !important; font-size: 1.1rem;"></i>
+                </button>
               </div>
               <span class="badge bg-warning text-dark"><i class="bi bi-clock me-1"></i>Expira em 10:00 minutos</span>
             </div>
@@ -324,8 +349,18 @@
             </div>
           </div>
 
-          <div class="d-grid mt-4">
-            <a href="../index.html"
+          <!-- Termos de Aceite -->
+          <input type="checkbox" id="aceitar-termos" class="d-none" />
+          <div class="d-flex align-items-center justify-content-center mt-4">
+            <label for="aceitar-termos" class="d-flex align-items-center gap-2 text-white-50" style="font-size: 0.9rem; cursor: pointer; user-select: none;">
+              <i class="bi bi-square checkbox-icone-desmarcado" style="font-size: 1.25rem;"></i>
+              <i class="bi bi-check-square-fill checkbox-icone-marcado" style="font-size: 1.25rem; color: #c084fc; display: none;"></i>
+              <span>Eu li e aceito os <a href="#" style="color: #c084fc; text-decoration: none;" onclick="event.stopPropagation();">Termos de Uso</a> e as <a href="#" style="color: #c084fc; text-decoration: none;" onclick="event.stopPropagation();">Políticas de Privacidade</a>.</span>
+            </label>
+          </div>
+
+          <div class="d-grid mt-3" id="botao-finalizar-container">
+            <a href="../../index.html"
               class="btn btn-primary py-3 btn-finalizar-compra d-flex align-items-center justify-content-center"
               style="font-size: 1.1rem; border-radius: 12px; text-decoration: none;" title="Finalizar compra">
               <i class="bi bi-shield-lock me-2"></i>Finalizar Compra
@@ -344,3 +379,6 @@
   <footer class="row align-items-end justify-content-center">
     Elixir Store - Tela de finalização de compra
   </footer>
+</body>
+
+</html>
