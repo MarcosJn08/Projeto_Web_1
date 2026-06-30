@@ -660,6 +660,30 @@ select:invalid{
   color: #ffffff;
 }
 
+.checkbox-icone-marcado {
+  display: none;
+}
+
+#aceitar-termos:checked ~ div label .checkbox-icone-desmarcado {
+  display: none;
+}
+
+#aceitar-termos:checked ~ div label .checkbox-icone-marcado {
+  display: inline-block;
+}
+
+#botao-finalizar-container .btn-finalizar-compra {
+  pointer-events: none;
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+#aceitar-termos:checked ~ #botao-finalizar-container .btn-finalizar-compra {
+  pointer-events: auto;
+  opacity: 1;
+  filter: none;
+}
+
 /*Carrinho fim*/
 
 .text-yellow{
