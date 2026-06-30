@@ -3,8 +3,6 @@
 ## Descrição
 Este projeto consiste no desenvolvimento de um site de **Loja de Games**, com o objetivo de apresentar um catálogo de jogos, exibir trailers e permitir a simulação de compra através de formulários.
 
-O foco principal é aplicar conceitos de **HTML e CSS**, organizando páginas, conteúdos multimídia e formulários de forma estruturada e funcional.
-
 ---
 
 ## Funcionalidades
@@ -18,40 +16,27 @@ O foco principal é aplicar conceitos de **HTML e CSS**, organizando páginas, c
 
 ## Estrutura do Projeto
 
-### `index.html`
-- Página inicial do site  
-- Destaque de jogos em formato de **carrossel**  
-- Interface visual atrativa  
-
-### `catalogo.html`
-- Lista de jogos disponíveis  
-- Cada item contém:
-  - Imagem
-  - Nome do jogo
-  - Preço
-  - Botão **"Ver mais"**
-
-### `detalhes.html`
-- Página com mais informações sobre o jogo  
-- Exibição de trailers utilizando a tag `<video>`  
-
-### `cadastro.html`
-- Formulário para simulação de compra  
-- Campos comuns:
-  - Nome
-  - Email
-  - Endereço
-  - Forma de pagamento
-
-### `contato.html`
-- Informações fictícias da loja  
-- Formulário para contato  
-
----
+projeto/
+├── index.html                  
+├── assets/
+│   ├── css/style.css          
+│   ├── images/                 
+│   ├── Midias/                 
+│   ├── Fonts/                  
+│   ├── bootstrap-icons/        
+│   └── node_modules/bootstrap/ 
+└── pages/
+    ├── catalogo.html           
+    ├── contato.html            
+    ├── cadastro.html           
+    └── detalhes/            
 
 ## Tecnologias Utilizadas
-- HTML5  
-- CSS3  
+HTML5 — estrutura semântica das páginas
+CSS3 — estilização customizada (style.css)
+Bootstrap 5 — grid, componentes (dropdowns, carousel, cards, formulários) e utilitários
+Bootstrap Icons — ícones utilizados em toda a interface
+JavaScript (via bootstrap.bundle.min.js) — comportamento dos componentes interativos do Bootstrap (dropdowns, carousel)
 
 ---
 
