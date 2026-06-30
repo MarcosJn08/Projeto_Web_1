@@ -39,7 +39,9 @@ projeto/
 └── pages/
     ├── catalogo.html           
     ├── contato.html           
-    ├── cadastro.html           
+    ├── cadastro/
+    │   ├── finalizacao_red_dead.html
+    │   └── finalizacao_forza.html
     └── detalhes/                
         ├── Battlefield.html
         ├── CallOfDuttyWarzone.html

@@ -482,6 +482,15 @@ select:invalid{
   display: none;
 }
 
+#painel-alerta {
+  display: block;
+}
+
+#opcao-pagamento-pix:checked ~ #container-paineis #painel-alerta,
+#opcao-pagamento-cartao:checked ~ #container-paineis #painel-alerta {
+  display: none !important;
+}
+
 #opcao-pagamento-pix:checked ~ #container-paineis #painel-pix,
 #opcao-pagamento-cartao:checked ~ #container-paineis #painel-cartao {
   display: block !important;
@@ -581,13 +590,33 @@ select:invalid{
   font-weight: 600 !important;
   font-size: 1.05rem !important;
   border-radius: 12px !important;
-  transition: background-color 0.2s !important;
+  transition: background-color 0.2s, opacity 0.3s, filter 0.3s !important;
   text-align: center;
   color: #ffffff !important;
 }
 
+#botao-finalizar-container .btn-finalizar-compra {
+  pointer-events: none;
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
 .btn-finalizar-compra:hover {
   background-color: #794db3 !important;
+}
+
+#aceitar-termos:checked ~ #botao-finalizar-container .btn-finalizar-compra {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+#aceitar-termos:checked ~ div label .checkbox-icone-desmarcado {
+  display: none !important;
+}
+
+#aceitar-termos:checked ~ div label .checkbox-icone-marcado {
+  display: inline-block !important;
 }
 
 .metodo-pagamento small {
