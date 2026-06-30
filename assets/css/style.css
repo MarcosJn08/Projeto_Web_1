@@ -268,7 +268,6 @@ select:invalid{
 }
 /*Contato fim*/
 
-
 @media (max-width: 768px) {
   .perguntas-opcoes {
     position: static;
@@ -284,6 +283,7 @@ select:invalid{
   top: 5px;
 }
 
+/*Carrinho início*/
 .carrinho-card {
   background-color: #3b085c;
   border-radius: 20px;
@@ -329,15 +329,22 @@ select:invalid{
 }
 
 .carrinho-item-delete {
-  color: #920b1c;
   font-size: 1.4rem;
   cursor: pointer;
-  transition: transform 0.2s, color 0.2s;
+  transition: transform 0.2s;
   align-self: flex-end;
 }
 
-.carrinho-item-delete:hover {
+.carrinho-item-delete i {
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.carrinho-item-delete:hover i {
   color: #ef4444;
+}
+
+.carrinho-item-delete:hover {
   transform: scale(1.1);
 }
 
@@ -375,8 +382,11 @@ select:invalid{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #270340;
   font-size: 1.1rem;
+}
+
+.carrinho-pill-icon i {
+  color: #270340;
 }
 
 .carrinho-pill-icon-ticket {
@@ -565,6 +575,15 @@ select:invalid{
   text-decoration: none !important;
 }
 
+.botao-remover-item i {
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.botao-remover-item:hover i {
+  color: #ef4444;
+}
+
 .btn-finalizar-compra {
   background-color: #8e5fc0 !important;
   border: none !important;
@@ -629,6 +648,8 @@ select:invalid{
   background-color: rgba(142, 95, 192, 0.35) !important;
   color: #ffffff !important;
 }
+
+/*Carrinho fim*/
 
 .text-yellow{
   color: yellow;
