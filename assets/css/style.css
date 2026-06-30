@@ -663,3 +663,7 @@ select:invalid{
 }
 
 
+#carouselExampleIndicators {
+  max-width: 1200px; /* largura máxima desejada */
+  margin: 0 auto; /* centraliza na tela */
+}
