@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DayZ</title>
-  <link rel="icon" href="../../assets/images/Logo.png">
-  <script src="../../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="../../assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../../assets/bootstrap-icons/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <title>Elixir Store</title>
+  <link rel="icon" href="../assets/images/Logo.png">
+  <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
@@ -18,8 +18,8 @@
     <div class="row align-items-center justify-content-between">
       <div class="col-auto dropdown">
         <button class="btn d-flex align-items-center justify-content-start dropdown-toggle text-light fs-1"
-          type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-expanded="false">
-          <img src="../../assets/images/Logo.png" alt="Logo" title="Logo Elixir Store" width="80" />
+          type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="../assets/images/Logo.png" alt="Logotipo da Elixir Store" title="Logo Elixir Store" width="80" />
           <h1 class="m-0 fs-3">Elixir Store</h1>
         </button>
 
@@ -27,14 +27,14 @@
         <ul class="dropdown-menu custom-dropdown">
           <li class="dropdown-section-title">Usuário</li>
           <li>
-            <a href="../../index.html" class="dropdown-item text-light"><i class="bi bi-house-fill fs-4"></i>Inicio</a>
+            <a href="../index.html" class="dropdown-item text-light"><i class="bi bi-house-fill fs-4"></i>Inicio</a>
           </li>
           <li>
-            <a href="../catalogo.html" class="dropdown-item text-light"><i
+            <a href="catalogo.html" class="dropdown-item text-light"><i
                 class="bi bi-bookmarks fs-4"></i>Catalogo</a>
           </li>
           <li>
-            <a href="../contato.html" class="dropdown-item text-light"><i
+            <a href="contato.html" class="dropdown-item text-light"><i
                 class="bi bi-telephone-fill fs-4"></i>Contato</a>
           </li>
 
@@ -67,8 +67,8 @@
               <!-- Item 1 -->
               <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-secondary">
                 <div class="d-flex align-items-center gap-2">
-                  <img src="../../assets/images/rdr2.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2"
-                    class="imagem-item-dropdown" />
+                  <img src="../assets/images/rdr2.png" alt="Capa do jogo Red Dead Redemption 2"
+                    title="Red Dead Redemption 2" class="imagem-item-dropdown" />
                   <div>
                     <h6 class="titulo-item-dropdown text-white mb-0">
                       Red Dead Redemption 2
@@ -84,7 +84,8 @@
               <!-- Item 2 -->
               <div class="d-flex align-items-center justify-content-between py-2 border-bottom border-secondary">
                 <div class="d-flex align-items-center gap-2">
-                  <img src="../../assets/images/csgo2.png" alt="CS:GO 2" title="CS:GO 2" class="imagem-item-dropdown" />
+                  <img src="../assets/images/csgo2.png" alt="Capa do jogo CS:GO 2" title="CS:GO 2"
+                    class="imagem-item-dropdown" />
                   <div>
                     <h6 class="titulo-item-dropdown text-white mb-0">
                       CS:GO 2
@@ -102,7 +103,7 @@
               <span class="fw-bold text-white">R$ 249,90</span>
             </div>
             <div class="d-grid">
-              <a href="../cadastro.html" class="btn btn-primary btn-finalizar-compra text-light"
+              <a href="cadastro.html" class="btn btn-primary btn-finalizar-compra text-light"
                 title="Finalizar compra">Finalizar Compra</a>
             </div>
           </div>
@@ -133,7 +134,7 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-end menu-dropdown-conta text-light" aria-labelledby="accountDropdown">
             <li>
-              <a href="#" class="dropdown-item py-2 d-flex align-items-center gap-2" title="Configurações">
+              <a href="configuracoes.html" class="dropdown-item py-2 d-flex align-items-center gap-2" title="Configurações">
                 <i class="bi bi-gear"></i> Configurações
               </a>
             </li>
@@ -147,115 +148,181 @@
       </div>
     </div>
   </header>
-  <main class="container-fluid">
+
+  <main class="container my-5">
     <div class="row">
-      <div>
-        <a href="../../index.html" class="text-light text-decoration-none">Inicio</a><i
-          class="bi bi-caret-right-fill"></i>
-        <a href="../catalogo.html" class="text-light text-decoration-none">Catalogo</a><i
-          class="bi bi-caret-right-fill"></i>
-        <a href="" class="text-light text-decoration-none">DayZ</a>
+
+      <!-- Menu Lateral -->
+      <div class="col-lg-3 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+
+            <i class="bi bi-person-circle fs-1" ></i>
+
+            <h4>Marcos</h4>
+            <p class="text-muted">Marcos@gmail.com</p>
+
+            <hr>
+
+            <div class="list-group list-group-flush">
+
+              <a href="#seguranca" class="list-group-item list-group-item-action">
+                <i class="bi bi-shield-lock-fill"></i>
+                Segurança
+              </a>
+
+              <a href="#notificacoes" class="list-group-item list-group-item-action">
+                <i class="bi bi-bell-fill"></i>
+                Notificações
+              </a>
+
+              <a href="#tema" class="list-group-item list-group-item-action">
+                <i class="bi bi-palette-fill"></i>
+                Aparência
+              </a>
+            </div>
+
+          </div>
+        </div>
       </div>
 
-      <div class="row contain">
-        <div class="col-md-8">
-          <video class="w-100" controls autoplay muted>
-            <source src="../../assets/Midias/DayZ/Trailer.mp4" type="video/mp4" />
-          </video>
-        </div>
+      <!-- Conteúdo -->
+      <div class="col-lg-9">
 
-        <div class="col-md-4 text-light">
-          <h1 class="fw-bold mb-2">DayZ</h1>
-
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <span class="fs-5 fw-semibold">4.1</span>
-            <i class="bi bi-star-fill text-warning"></i>
+        <!-- Perfil -->
+        <div class="card shadow-sm mb-4" id="perfil">
+          <div class="card-header">
+            <h4><i class="bi bi-person-circle"></i> Meu Perfil</h4>
           </div>
 
-          <h5 class="fw-semibold mb-2">Categorias</h5>
+          <div class="card-body">
 
-          <div class="d-flex flex-wrap gap-2 mb-4">
-            <span class="categoria">Sobrevivência</span>
-            <span class="categoria">Mundo Aberto</span>
-            <span class="categoria">Multiplayer</span>
-          </div>
+            <div class="row">
 
-          <div class="mb-4">
-            <span class="text-secondary d-block">Preço</span>
-            <h2 class="fw-bold text-success">R$ 149,90</h2>
-          </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" value="Marcos">
+              </div>
 
-          <div class="mb-4">
-            <h5 class="fw-semibold">Sobre o jogo</h5>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Usuário</label>
+                <input type="text" class="form-control" value="@MarcosJn08">
+              </div>
 
-            <p class="text-secondary lh-lg">
-              DayZ é um jogo de sobrevivência em um mundo devastado por uma
-              epidemia. Procure recursos, enfrente infectados e outros jogadores,
-              e faça o possível para permanecer vivo em um ambiente hostil.
-            </p>
-          </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" value="Marcos@gmail.com">
+              </div>
 
-          <div class="d-flex flex-wrap gap-2">
-            <button type="button" class="btn btn-light d-flex align-items-center gap-2">
-              <i class="bi bi-cart4 text-dark"></i>
-              Comprar
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Telefone</label>
+                <input type="text" class="form-control" placeholder="(00) 00000-0000">
+              </div>
+
+            </div>
+
+            <button class="btn btn-primary">
+              <i class="bi bi-floppy-fill"></i>
+              Salvar Alterações
             </button>
 
-            <button type="button" class="btn btn-outline-secondary d-flex align-items-center gap-2">
-              <i class="bi bi-cart-plus"></i>
-              Adicionar ao Carrinho
+          </div>
+        </div>
+
+        <!-- Segurança -->
+        <div class="card shadow-sm mb-4" id="seguranca">
+          <div class="card-header">
+            <h4><i class="bi bi-shield-lock-fill"></i> Segurança</h4>
+          </div>
+
+          <div class="card-body">
+
+            <div class="mb-3">
+              <label class="form-label">
+                Senha Atual
+              </label>
+
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">
+                Nova Senha
+              </label>
+
+              <input type="password" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">
+                Confirmar Nova Senha
+              </label>
+
+              <input type="password" class="form-control">
+            </div>
+
+            <button class="btn btn-success">
+              Alterar Senha
             </button>
+
           </div>
         </div>
+
+        <!-- Notificações -->
+        <div class="card shadow-sm mb-4" id="notificacoes">
+          <div class="card-header">
+            <h4><i class="bi bi-bell-fill"></i> Notificações</h4>
+          </div>
+
+          <div class="card-body">
+
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" checked>
+
+              <label class="form-check-label">
+                Receber promoções por e-mail
+              </label>
+            </div>
+
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" checked>
+
+              <label class="form-check-label">
+                Receber novidades da loja
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Aparência -->
+        <div class="card shadow-sm" id="tema">
+          <div class="card-header">
+            <h4><i class="bi bi-palette-fill"></i> Aparência</h4>
+          </div>
+
+          <div class="card-body">
+
+            <label class="form-label">
+              Tema
+            </label>
+
+            <select class="form-select">
+              <option>Escuro</option>
+              <option>Claro</option>
+              <option>Automático</option>
+            </select>
+
+          </div>
+        </div>
+
       </div>
 
-      <div class="d-flex gap-3 overflow-auto mt-3">
-        <img src="../../assets/Midias/DayZ/Capa.jpg" width="200" />
-        <img src="../../assets/Midias/DayZ/screenshot_1.jpg" width="200" />
-        <img src="../../assets/Midias/DayZ/screenshot_2.jpg" width="200" />
-        <img src="../../assets/Midias/DayZ/screenshot_3.jpg" width="200" />
-        <img src="../../assets/Midias/DayZ/screenshot_4.jpg" width="200" />
-        <img src="../../assets/Midias/DayZ/screenshot_5.jpg" width="200" />
-      </div>
-
-      <div class="row mt-4 g-3">
-
-        <div class="col-md-4">
-          <div class="info-card d-flex align-items-center gap-3">
-            <i class="bi bi-person-circle fs-1"></i>
-            <div>
-              <p class="titulo mb-1">Desenvolvedor</p>
-              <p class="valor mb-0">Bohemia Interactive</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="info-card d-flex align-items-center gap-3">
-            <i class="bi bi-calendar-event fs-1"></i>
-            <div>
-              <p class="titulo mb-1">Lançamento</p>
-              <p class="valor mb-0">13 de dezembro de 2018</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="info-card d-flex align-items-center gap-3">
-            <i class="bi bi-shield-check fs-1"></i>
-            <div>
-              <p class="titulo mb-1">Classificação</p>
-              <p class="valor mb-0">18 anos</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
   </main>
 
   <footer class="row align-items-end justify-content-center">
-    Elixir Store - Tela Inicial
+    Elixir Store - Configurações
   </footer>
 </body>
 

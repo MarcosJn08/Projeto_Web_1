@@ -671,3 +671,108 @@ select:invalid{
   max-width: 1200px; /* largura máxima desejada */
   margin: 0 auto; /* centraliza na tela */
 }
+
+/* ========================= */
+/* Página de Configurações   */
+/* ========================= */
+
+main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+
+.card{
+    background-color: #1f1f2e;
+    border: 1px solid #36364d;
+    border-radius: 12px;
+}
+
+.card-header{
+    background-color: #2b2b3f;
+    color: white;
+    border-bottom: 1px solid #444;
+}
+
+.card-body{
+    color: white;
+}
+
+/* Perfil */
+
+.rounded-circle{
+    border: 3px solid #7b2cbf;
+}
+
+/* Menu lateral */
+
+.list-group-item{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.list-group-item:hover{
+    background-color: #7b2cbf;
+    color: white;
+}
+
+.list-group-item.active{
+    background-color: #7b2cbf;
+    border-color: #7b2cbf;
+    color: white;
+}
+
+/* Labels */
+
+.form-label{
+    color: white;
+}
+
+/* Campos */
+
+.card .form-control,
+.card .form-select{
+    background-color: #2b2b3f;
+    border: 1px solid #555;
+    color: white;
+}
+
+.card .form-control::placeholder{
+    color: #bdbdbd;
+}
+
+.card .form-control:focus,
+.card .form-select:focus{
+    background-color: #2b2b3f;
+    color: white;
+    border-color: #7b2cbf;
+    box-shadow: 0 0 5px rgba(123,44,191,.5);
+}
+
+/* Switch */
+
+.form-check-label{
+    color: white;
+}
+
+/* Botões */
+
+.btn-primary{
+    background-color: #7b2cbf;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #6520a5;
+}
+
+.btn-success{
+    background-color: #198754;
+    border: none;
+}
+
+.btn-success:hover{
+    background-color: #157347;
+}
