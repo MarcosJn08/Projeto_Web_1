@@ -264,7 +264,7 @@ select:invalid{
 .perguntas-opcoes{
   position: absolute;
   right: 20px;
-  top: 40px;
+  top: 40px; 
 }
 /*Contato fim*/
 
@@ -274,16 +274,6 @@ select:invalid{
     margin-top: 10px;
   }
 }
-.bi.bi-house-door-fill{
-  color:#cc9cff;
-  font-size: 18px;
-  padding: 10px;
-  margin-left: 20px;
-  position: relative;
-  top: 5px;
-}
-
-/*Carrinho início*/
 .carrinho-card {
   background-color: #3b085c;
   border-radius: 20px;
