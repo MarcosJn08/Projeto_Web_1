@@ -33,7 +33,8 @@
             <a href="../catalogo.html" class="dropdown-item text-light"><i class="bi bi-bookmarks fs-4"></i>Catalogo</a>
           </li>
           <li>
-            <a href="../contato.html" class="dropdown-item text-light"><i class="bi bi-telephone-fill fs-4"></i>Contato</a>
+            <a href="../contato.html" class="dropdown-item text-light"><i
+                class="bi bi-telephone-fill fs-4"></i>Contato</a>
           </li>
 
         </ul>
@@ -140,12 +141,16 @@
         <!-- Confirmação de Conta Logada -->
         <div class="carrinho-pagamento-card mb-4 p-3 d-flex align-items-center" style="border-left: 4px solid #8e5fc0;">
           <div class="d-flex align-items-center gap-3">
-            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; background-color: rgba(142, 95, 192, 0.2);">
+            <div class="rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 45px; height: 45px; background-color: rgba(142, 95, 192, 0.2);">
               <i class="bi bi-person-check-fill" style="color: #c084fc; font-size: 1.4rem;"></i>
             </div>
             <div>
-              <span class="text-white-50 d-block" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.2;">Comprando como:</span>
-              <span class="fw-semibold text-white d-block" style="font-size: 1.05rem; line-height: 1.2;">Marcos Silva</span>
+              <span class="text-white-50 d-block"
+                style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.2;">Comprando
+                como:</span>
+              <span class="fw-semibold text-white d-block" style="font-size: 1.05rem; line-height: 1.2;">Marcos
+                Silva</span>
               <small class="text-white-50" style="font-size: 0.85rem;">marcos.silva@email.com</small>
             </div>
           </div>
@@ -296,7 +301,10 @@
                 <input type="text" class="form-control text-truncate border-0"
                   value="00020126360014br.gov.bcb.pix0114elixirstorepix" readonly id="chavePix"
                   title="Código Pix para cópia" style="background: white; color: #333;" />
-                <button class="btn btn-light d-flex align-items-center justify-content-center" type="button" id="btnCopiarPix" title="Copiar código Pix" onclick="navigator.clipboard.writeText(document.getElementById('chavePix').value); alert('Código Pix copiado com sucesso!');" style="background: white; border: none; padding: 0 15px;">
+                <button class="btn btn-light d-flex align-items-center justify-content-center" type="button"
+                  id="btnCopiarPix" title="Copiar código Pix"
+                  onclick="navigator.clipboard.writeText(document.getElementById('chavePix').value); alert('Código Pix copiado com sucesso!');"
+                  style="background: white; border: none; padding: 0 15px;">
                   <i class="bi bi-copy" style="color: #8e5fc0 !important; font-size: 1.1rem;"></i>
                 </button>
               </div>
@@ -310,7 +318,9 @@
                   <label for="numeroCartao" class="form-label text-white" style="font-size: 0.85rem;">Número do
                     Cartão</label>
                   <input type="text" id="numeroCartao" class="form-control input-checkout"
-                    placeholder="0000 0000 0000 0000" title="Digite o número do seu cartão de crédito" />
+                    placeholder="0000-0000-0000-0000" maxlength="19"
+                    oninput="this.value = this.value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1-')"
+                    title="Digite o número do seu cartão de crédito" />
                 </div>
                 <div class="col-12">
                   <label for="nomeCartao" class="form-label text-white" style="font-size: 0.85rem;">Nome Impresso no
@@ -321,11 +331,13 @@
                 <div class="col-6">
                   <label for="validadeCartao" class="form-label text-white" style="font-size: 0.85rem;">Validade</label>
                   <input type="text" id="validadeCartao" class="form-control input-checkout" placeholder="MM/AA"
+                    maxlength="5" oninput="this.value = this.value.replace(/\D/g, '').replace(/(\d{2})(?=\d)/g, '$1/')"
                     title="Digite a validade do cartão (MM/AA)" />
                 </div>
                 <div class="col-6">
                   <label for="cvvCartao" class="form-label text-white" style="font-size: 0.85rem;">CVV</label>
                   <input type="password" id="cvvCartao" class="form-control input-checkout" placeholder="123"
+                    maxlength="3" oninput="this.value = this.value.replace(/\D/g, '')"
                     title="Digite o código CVV de 3 dígitos do cartão" />
                 </div>
                 <div class="col-12">
@@ -347,10 +359,14 @@
           <!-- Termos de Aceite -->
           <input type="checkbox" id="aceitar-termos" class="d-none" />
           <div class="d-flex align-items-center justify-content-center mt-4">
-            <label for="aceitar-termos" class="d-flex align-items-center gap-2 text-white-50" style="font-size: 0.9rem; cursor: pointer; user-select: none;">
+            <label for="aceitar-termos" class="d-flex align-items-center gap-2 text-white-50"
+              style="font-size: 0.9rem; cursor: pointer; user-select: none;">
               <i class="bi bi-square checkbox-icone-desmarcado" style="font-size: 1.25rem;"></i>
               <i class="bi bi-check-square-fill checkbox-icone-marcado" style="font-size: 1.25rem; color: #c084fc;"></i>
-              <span>Eu li e aceito os <a href="#" style="color: #c084fc; text-decoration: none;" onclick="event.stopPropagation();">Termos de Uso</a> e as <a href="#" style="color: #c084fc; text-decoration: none;" onclick="event.stopPropagation();">Políticas de Privacidade</a>.</span>
+              <span>Eu li e aceito os <a href="#" style="color: #c084fc; text-decoration: none;"
+                  onclick="event.stopPropagation();">Termos de Uso</a> e as <a href="#"
+                  style="color: #c084fc; text-decoration: none;" onclick="event.stopPropagation();">Políticas de
+                  Privacidade</a>.</span>
             </label>
           </div>
 
