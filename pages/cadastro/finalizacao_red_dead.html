@@ -305,34 +305,34 @@
 
             <!-- Cartão -->
             <div id="painel-cartao" class="painel-pagamento">
-              <form class="row g-3">
+              <form class="row g-3" id="form-cartao">
                 <div class="col-12">
                   <label for="numeroCartao" class="form-label text-white" style="font-size: 0.85rem;">Número do
                     Cartão</label>
                   <input type="text" id="numeroCartao" class="form-control input-checkout"
-                    placeholder="0000 0000 0000 0000" title="Digite o número do seu cartão de crédito" />
+                    placeholder="0000-0000-0000-0000" maxlength="19" oninput="this.value = this.value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1-')" title="Digite o número do seu cartão de crédito" required />
                 </div>
                 <div class="col-12">
                   <label for="nomeCartao" class="form-label text-white" style="font-size: 0.85rem;">Nome Impresso no
                     Cartão</label>
                   <input type="text" id="nomeCartao" class="form-control input-checkout" placeholder="NOME DO TITULAR"
-                    title="Digite o nome impresso no seu cartão" />
+                    title="Digite o nome impresso no seu cartão" required />
                 </div>
                 <div class="col-6">
                   <label for="validadeCartao" class="form-label text-white" style="font-size: 0.85rem;">Validade</label>
                   <input type="text" id="validadeCartao" class="form-control input-checkout" placeholder="MM/AA"
-                    title="Digite a validade do cartão (MM/AA)" />
+                    maxlength="5" oninput="this.value = this.value.replace(/\D/g, '').replace(/(\d{2})(?=\d)/g, '$1/')" title="Digite a validade do cartão (MM/AA)" required />
                 </div>
                 <div class="col-6">
                   <label for="cvvCartao" class="form-label text-white" style="font-size: 0.85rem;">CVV</label>
                   <input type="password" id="cvvCartao" class="form-control input-checkout" placeholder="123"
-                    title="Digite o código CVV de 3 dígitos do cartão" />
+                    maxlength="3" oninput="this.value = this.value.replace(/\D/g, '')" title="Digite o código CVV de 3 dígitos do cartão" required />
                 </div>
                 <div class="col-12">
                   <label for="parcelamentoCartao" class="form-label text-white" style="font-size: 0.85rem;">Opções de
                     Parcelamento</label>
                   <select id="parcelamentoCartao" class="form-select input-checkout"
-                    title="Selecione em quantas parcelas deseja pagar">
+                    title="Selecione em quantas parcelas deseja pagar" required>
                     <option selected>1x de R$ 249,90 sem juros</option>
                     <option>2x de R$ 124,95 sem juros</option>
                     <option>3x de R$ 83,30 sem juros</option>
@@ -357,7 +357,8 @@
           <div class="d-grid mt-3" id="botao-finalizar-container">
             <a href="../../index.html"
               class="btn btn-primary py-3 btn-finalizar-compra d-flex align-items-center justify-content-center"
-              style="font-size: 1.1rem; border-radius: 12px; text-decoration: none;" title="Finalizar compra">
+              style="font-size: 1.1rem; border-radius: 12px; text-decoration: none;" title="Finalizar compra"
+              onclick="if (document.getElementById('opcao-pagamento-cartao').checked) { const form = document.getElementById('form-cartao'); if (!form.reportValidity()) { event.preventDefault(); } }">
               <i class="bi bi-shield-lock me-2"></i>Finalizar Compra
             </a>
           </div>
